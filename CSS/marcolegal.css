@@ -1,0 +1,215 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+
+    body { font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        background-color:rgb(253, 249, 230);
+        margin: 30px;
+        }
+
+    .menu ul{
+        font-family:"Raleway", sans-serif;
+        font-weight: 400 ;
+        font-size: 14px;
+        list-style: none;
+        margin:0;
+        padding:0;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        }
+    
+    .menu ul li a{
+        color:rgb(255, 225, 230);
+        font-weight: bold;
+        border-style:inset;
+        display: block;
+        padding: 1px 5px;
+        text-decoration: none;
+        background-color: #ad10ad ;
+        }
+    .menu ul li a:hover{
+        background-color: rgb(245, 114, 243);
+        }
+    .li1 {
+        order: 1;
+        flex-grow: 2;
+         }
+    .li2 {
+        order: 2;
+        flex-grow: 2;
+         }
+    .li3 {
+        order: 3;
+        flex-grow: 2;
+         }
+    .li4 {
+            order: 4;
+            flex-grow: 2;
+        }
+    .li5 {
+            order: 5;
+            flex-grow: 2;
+        }
+        
+    h2 {
+        font-family: "raleway", sans-serif; 
+    color: #ad10ad;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px; 
+    border: 1px solid #ad10ad;
+    padding: 10px;
+    background-color: rgb(255, 239, 251)
+        /*color: rgb(255, 225, 230); 
+        font-size: 30px;
+        font-style: normal;
+        font-weight: bold;
+        border-radius: 10px;
+        letter-spacing: 5px;
+        /* width: 90%;
+        margin: auto;
+        text-align: center;  
+        outline-style: double; 
+        background-color: #ad10ad;*/
+        }
+    
+    h3 {
+        text-decoration: underline;
+        font-size: 20px;
+        letter-spacing: 5px;
+        color: #ad10ad;
+        padding: 2rem 2rem 2rem 0rem;
+        margin-top: 10px;
+    }
+    /*.grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap: 5px ;
+        grid-row-gap: 10px;
+        justify-items: center;
+    } */
+    .flexley {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        border: 1px solid #ad10ad;
+        padding: 5px;
+    }
+
+    .flexley2 {
+        display: flex; 
+        flex-direction: column;
+        border-radius: 10px; 
+        border: 1px solid #ad10ad;
+        padding: 5px;        
+    }
+ 
+    div img {
+        width: 15rem;
+        padding: 5px;
+        margin-top: 20px; 
+    }
+    
+    .manosunidas a img {
+        width: 15rem;
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+    div p{
+        /*font-size: 16px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-bottom: 20px;*/
+        text-align: justify;
+        line-height: 2;
+     }
+
+     p::first-letter {
+        font-size: 150%;
+    }
+    
+    /*.grid2 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-column-gap: 0px ;
+        justify-items:stretch;
+    } */
+    .spacep {
+        margin-left: 10px;
+        margin-right: 1px;
+        padding-right: 1px;
+    }
+
+    #violenciagenero {
+        width: 15rem;
+        padding: 5px;
+        margin-top: 5px;
+        
+    }
+    /*#centerimg{
+        display: block;
+        width: 50%;
+        margin: auto;
+    }*/
+
+    .flecha {
+        width: 20px;
+    }
+    
+    footer{
+        font-size: 12px;
+        text-align: center;
+        color:rgb(253, 249, 230);
+        background-color: #ad10ad;
+        display:block;
+        padding-bottom: 20px;
+        }
+     #margincopy {
+        padding: 10px 5px;
+        }
+    
+        @media screen and (min-width: 480px) 
+            {
+            /*body { background-color: aqua;}*/
+            div img {
+                width: 25rem;
+            }
+            #violenciagenero {
+                width: 25rem;
+            }
+            .manosunidas a img {width: 25rem;}}
+            
+            
+        @media screen and (min-width: 768px) {
+           /* body {background-color: blueviolet}; */
+            div img {
+                width: 30rem;
+            }
+            #violenciagenero {
+                width: 30rem;
+            }
+            .manosunidas a img {width: 30rem;}
+           
+            }
+            
+            @media screen and (min-width: 1024px) {
+            /*body {background-color: pink;} */
+            div img {
+                width: 25rem;
+            }
+            #violenciagenero {
+                width: 40rem;
+            }
+            .manosunidas a img {width: 40rem;}
+            
+            .flexley div img {flex-direction: row;
+            flex-grow: initial;}
+            
+            }

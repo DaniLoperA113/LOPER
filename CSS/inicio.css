@@ -1,0 +1,181 @@
+/* 
+
+Daniela Cattoni: HTML y CSS - MAIN de INICIO.
+
+Loreley Joray: HTML y CSS - MAIN de QUIENES SOMOS.
+
+Jimena Zitaglia: Reseteo CSS. HTML y CSS - Header y Footer ambas páginas.
+
+Luisina Gratti: HEAD ambas páginas.
+
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+
+.menu ul{font-family:"Raleway", sans-serif;
+    font-weight: 400 ;
+    font-size: 14px;
+    list-style: none;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    }
+
+.menu ul li a{
+    color:rgb(255, 225, 230);
+    font-weight: bold;
+    border-style:inset;
+    display: block;
+    padding: 5px 5px;
+    text-decoration: none;
+    background-color: #ad10ad ;
+    }
+
+.menu ul li a:hover{
+    background-color: rgb(245, 114, 243);
+    }
+.li1 {
+    order: 1;
+    flex-grow: 2;
+     }
+.li2 {
+    order: 2;
+    flex-grow: 2;
+     }
+.li3 {
+    order: 3;
+    flex-grow: 2;
+     }
+.li4 {
+        order: 4;
+        flex-grow: 2;
+    }
+.li5 {
+        order: 5;
+        flex-grow: 2;
+    }
+
+    /* Daniela Cattoni */
+h1 {color:rgb(255, 225, 230); 
+    font-size: 30px;
+    font-style: normal;
+    font-weight:700 ;
+    letter-spacing: 5px;
+    border-radius: 10px;
+   /* width: 90%;*/
+    margin: 30px 0px 30px 0px;
+    text-align: center;  
+    outline-style: double; 
+    background-color:  #710671;
+    }
+
+#marginp {margin:20px 0px 20px 0px;
+    }
+
+body {font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    background-color:rgb(253, 249, 230);
+    margin: 30px;
+    }
+
+h2 {font-family: "raleway", sans-serif; 
+    color: #ad10ad;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px; 
+    border: 1px solid #ad10ad;
+    padding: 10px;
+    background-color: rgb(255, 239, 251);
+    }
+
+h3 {text-decoration: underline;
+    font-size: 20px; 
+    letter-spacing: 5px;
+    color: #ad10ad
+    }
+    
+.definicion {display: flex;
+    flex-direction: column;
+    border-radius: 10px; 
+    border: 1px solid #ad10ad;
+    padding: 5px;
+    }
+
+p {text-align: justify;
+   line-height: 2;
+    }
+
+.ciclo {border-radius: 10px; 
+    border: 1px solid #ad10ad;
+    padding: 5px;
+    }
+
+.tabla {display: flex;
+       flex-direction: column;
+       padding: 05px;
+        }
+
+.etapa1 {padding: 10px;border: solid #710671;}
+.etapa2 {padding: 10px;border: solid #710671;}
+.etapa3 {padding: 10px;border: solid #710671;}
+
+.femicidio {display: flex; flex-direction: column;
+    border-radius: 10px; 
+    border: 1px solid #ad10ad;
+    padding: 5px;
+    }
+
+.foto1 {padding: 5px; width:20rem;
+    }
+
+.fotomano {padding: 5px; width: 20rem;
+    }
+
+
+.flecha {width: 20px;
+    }
+
+footer{font-size: 12px;
+    text-align: center;
+    color:rgb(253, 249, 230);
+    background-color: #ad10ad;
+    display:block;
+    padding-bottom: 20px;
+    }
+    
+ #margincopy {
+    padding: 10px 5px;
+    }
+    
+@media screen and (min-width: 480px) {
+/*.media {background-color: aqua;}*/
+.definicion {flex-direction: column;}
+.femicidio {flex-direction: column;}
+.foto1 {width: 30rem;}
+.fotomano {width: 30rem;}
+}
+
+@media screen and (min-width: 768px) {
+/*.media {background-color: rgb(60, 10, 179)};*/
+.foto1 {width: 30rem;}
+.fotomano {width: 30rem;}
+.definicion {flex-direction: row;}
+.femicidio {flex-direction: row;}
+.tabla  {flex-direction: row;}
+}
+
+@media screen and (min-width: 1024px) {
+/*.media {background-color: rgb(0, 5, 5);} */
+.foto1 {width: 40rem;}
+.fotomano {width: 40rem;}
+.definicion {flex-direction: row;}
+.femicidio {flex-direction: row;}
+.tabla  {flex-direction: row;}
+ }
