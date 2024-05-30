@@ -151,7 +151,9 @@ li{
 .femicidio {
     display:flex;
 }
-
+.flecha {
+    width: 20px;
+}
 footer{
     font-size: 16px;
     text-align: center;
