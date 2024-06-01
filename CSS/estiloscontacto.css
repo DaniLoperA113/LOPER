@@ -119,3 +119,50 @@ footer{
     
     }
 }
+@media only screen and (max-width: 760px) {
+    h1{
+        margin: 3vh 3vw;
+        margin-bottom: 0vh;
+        font-size:24px ;
+    }
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align:start;
+        padding: 2vh 2vw;
+    }
+    .contenedor h2{
+        font-size: 25px;
+        width: 90vw;
+        margin: 0.5vh 1vw;
+        padding-bottom: 1vh;
+    }
+
+}
+@media only screen and (max-width: 1024) {
+
+    h1{
+        margin: 3vh 3vw;
+        margin-bottom: 0vh;
+        font-size:40px ;
+    }
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: star;
+        justify-content: space-evenly;
+        text-align:start;
+        padding: 2vh 2vw;
+    }
+    .contenedor h2{
+        font-size: 32px;
+        width: 90vw;
+        margin: 0.5vh 1vw;
+        padding-bottom: 1vh;
+    }
+
+}
