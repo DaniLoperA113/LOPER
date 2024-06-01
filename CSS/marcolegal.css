@@ -109,16 +109,18 @@
         padding: 5px;        
     }
  
-    div img {
-        width: 15rem;
+    .flexley div img {
+        width: 20rem;
         padding: 5px;
         margin-top: 20px; 
+        border-radius: 20px;
     }
     
     .manosunidas a img {
-        width: 15rem;
+        width: 20rem;
         padding: 5px;
         margin-top: 20px;
+        border-radius: 20px;
     }
 
     div p{
@@ -148,7 +150,7 @@
     }
 
     #violenciagenero {
-        width: 15rem;
+        width: 20rem;
         padding: 5px;
         margin-top: 5px;
         
@@ -184,18 +186,38 @@
             div img {
                 width: 25rem;
             }
+            .flexley div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }          
+
             #violenciagenero {
                 width: 25rem;
             }
-            .manosunidas a img {width: 25rem;}}
+            .manosunidas a img {
+                width: 25rem;
+                border-radius: 20px ; 
+            }
+
+            .manosunidas div {
+                display: flex;
+                justify-content: space-around;
+            }
+            }
             
             
         @media screen and (min-width: 768px) {
            /* body {background-color: blueviolet}; */
             div img {
                 width: 30rem;
+                border-radius: 30px;
             }
-            #violenciagenero {
+            .flexley div {
+                display: flex;
+                justify-content: space-around;
+
+            #violenciadegenero {
                 width: 30rem;
             }
             .manosunidas a img {width: 30rem;}
@@ -204,15 +226,27 @@
             
             @media screen and (min-width: 1024px) {
             /*body {background-color: pink;} */
-            div img {
-                width: 25rem;
+                div img {
+                width: 40rem;
+                border-radius: 40px;
+                }
+            .flexley div {
+                display: flex;
+                justify-content: space-around;
+            }
+                                                
             }
             #violenciagenero {
                 width: 40rem;
             }
-            .manosunidas a img {width: 40rem;}
-            
-            .flexley div img {flex-direction: row;
-            flex-grow: initial;}
-            
+            .manosunidas a img {
+                width: 40rem;
             }
+            .manosunidas div {
+                display: flex;
+                justify-content: space-around;
+            }
+            
+           
+            
+        }
