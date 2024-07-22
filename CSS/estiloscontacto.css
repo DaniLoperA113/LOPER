@@ -1,58 +1,13 @@
-
-
-.barra-navegacion{
-    background-color: rgb(253, 249, 230);
-}
-
-/*BARRA DE NAVEGACION*/
-.nav-underline{
-    padding: 1vh 2vw;
-    background-color: rgb(253, 249, 230);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-}
-.nav-link{
-    color:#ad10ad
-}
-.nav-link:hover{
-    color: #710671;
-}
-.nav-underline .nav-link.active, .nav-underline .show>.nav-link{
-   color: #710671; 
-}
-/*TITULO*/
-h1{
-    font-family: "raleway", sans-serif; 
-    font-weight: bolder;
-    color: #710671;
-    margin: 20px;
-    text-align: center;
-    border-radius: 10px; 
-    border: 1px solid #ad10ad;
-    padding: 1vh;
-    background-color: rgb(255, 239, 251);;
-}
-
 /*CONTENEDOR SUBTIRULO Y FORM*/
-.contenedor{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.contenedor h2{
-    font-family:"Raleway" sans-serif;
-    font-size: 16px;
-    font-weight:600;
-    width: 20vw;
-    margin: 1vw;
-    padding: 1vh 2vw;
+ul{
+    padding-left: 0;
 }
 
 .contenedor-form-boostrap{
     font-size: 12px;
     background-color: rgb(255, 239, 251);
-    margin: 2vw;
-    padding: 2vw;
+    margin: 2rem 0;
+    padding: 2rem;
     border: 1px solid #ad10ad;
     border-radius:20px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
@@ -60,8 +15,8 @@ h1{
 
 .form-control {
     border: 1px solid rgb(218, 179, 255);
-
 }
+
 /*BOTON ENVIAR*/
 .btn-primary {
     background-color: #710671;
@@ -74,95 +29,4 @@ h1{
     border: 1px solid #ad10ad;
     border-radius:10px; 
 }
-footer{
-    font-size: 12px;
-    text-align: center;
-    color:rgb(253, 249, 230);
-    background-color: #ad10ad;
-    display:block;
-    padding-bottom: 20px;
-    }
-.femicidio {
-    display: flex;
-    text-align: center;
-}
- #margincopy {
-    padding: 10px 5px;
-    }
 
-    /*Empezar media querys con mobile first de 360 en adelante */
-@media only screen and (max-width: 360px) {
-    h1{
-        margin: 5vh 3vw;
-        font-size:20px ;
-    }
-    .contenedor{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    .contenedor h2{
-        font-size: 16px;
-        width: 80vw;
-        margin: 0.5vh 1vw;
-    }
-    .contenedor-form-boostrap{
-        margin: 2vh 2vw;
-        padding: 2vh 2vw;
-    }
-    .form-control {
-        width: 80vw;
-        border: 1px solid rgb(218, 179, 255);
-        margin: 1vh;
-    
-    }
-}
-@media only screen and (max-width: 760px) {
-    h1{
-        margin: 3vh 3vw;
-        margin-bottom: 0vh;
-        font-size:24px ;
-    }
-    .contenedor{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
-        text-align:start;
-        padding: 2vh 2vw;
-    }
-    .contenedor h2{
-        font-size: 25px;
-        width: 90vw;
-        margin: 0.5vh 1vw;
-        padding-bottom: 1vh;
-    }
-
-}
-@media only screen and (max-width: 1024) {
-
-    h1{
-        margin: 3vh 3vw;
-        margin-bottom: 0vh;
-        font-size:40px ;
-    }
-    .contenedor{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: star;
-        justify-content: space-evenly;
-        text-align:start;
-        padding: 2vh 2vw;
-    }
-    .contenedor h2{
-        font-size: 38px;
-        width: 90vw;
-        margin: 0.5vh 1vw;
-        padding-bottom: 1vh;
-    }
-
-}

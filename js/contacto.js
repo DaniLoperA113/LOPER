@@ -1,5 +1,3 @@
-
-
 let nombre = prompt("Por favor, indica tu nombre")
 if(nombre == "") {
     alert("Por favor, ingresá un nombre")
@@ -31,4 +29,15 @@ let mensaje = prompt("Por favor, indicanos tu situación para poder ayudarte")
 
 let presentacion = `Hola soy ${nombre} y ${apellido}, mi e-mail es ${email}, mi teléfono es ${telefono}, mi dirección es ${direccion} y mi situación es ${mensaje}`
 
-console.log (presentacion)
+// console.log (presentacion)
+
+
+/* window.addEventListener('load', function(e){
+    const formulario = document.querySelector('form');
+
+    let usuarios = [];
+    formulario.addEventListener('submit', function(e){
+        e.preventDefault();
+    })
+    console.log(formulario)
+}) */

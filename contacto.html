@@ -1,101 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Sitio web de información sobre violencia de genero.">
-    <meta name="keywords" content="violencia de genero, violencia intrafamiliar, violencia doméstica, ciclos de violencia, femicidio, marco legal ">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./CSS/estiloscontacto.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Contacto</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitio web de información sobre violencia de genero.">
+  <meta name="keywords" content="violencia de genero, violencia intrafamiliar, violencia doméstica, ciclos de violencia, femicidio, marco legal ">
+  <!-- Fonts Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./CSS/styles.css"><!-- estilos generales -->
+  <link rel="stylesheet" href="./CSS/estiloscontacto.css">
+  <title>Contacto</title>
 </head>
 <body>
   <header>
-  <div class="barra-navegacion">
-    <ul class="nav nav-underline">
-        <li class="nav-item">
-          <a class="nav-link "  href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="marcolegal.html">Marco Legal</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="links-de-interes.html">Links de interés</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="quienes-somos.html">Quienes Somos</a>
-        </li>
-      </ul>
-    </div> 
-  </header>   
-    <main>
+    <div class="menu" id="menu">
+        <nav>
+            <ul>
+                <li class="li1"><a href="index.html">Inicio</a></li>
+                <li class="li5"><a href="quienes-somos.html">Quienes somos</a></li>
+                <li class="li2"><a href="marcolegal.html">Marco Legal</a></li>
+                <li class="li4"><a href="contacto.html">Contacto</a></li>
+                <li class="li3"><a href="links-de-interes.html">Links de interes</a></li>
+            </ul>  
+        </nav> 
+    </div>
+  </header>
+  <main>
       <h1>Contacto</h1>
-
-      <section class="contenedor">
-      <h2>Envianos tus datos y nos pondremos en contacto a la brevedad.</h2>
-
-      <div class="contenedor-form-boostrap">
-        <form class="row g-3">
-          <div class="col-md-6">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre">
-          </div>
-          <div class="col-md-6">
-            <label for="apellido" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="apellido">
-          </div>
-          <div class="col-md-6">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email">
-          </div>
-          <div class="col-md-6">
-            <label for="telefono" class="form-label">Telefono</label>
-            <input type="tel" class="form-control" id="telefono">
-          </div>
-          <div class="col-12">
-            <label for="inputAddress" class="form-label">Direccion</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 calle">
-          </div>
-          <div class="col-md-6">
-            <label for="barrio" class="form-label">Barrio</label>
-            <input type="text" class="form-control" id="barrio">
-          </div>
-          <div class="col-md-4">
-            <label for="inputCity" class="form-label">Ciudad</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="col-md-2">
-            <label for="cp" class="form-label">CP</label>
-            <input type="number" class="form-control" id="cp">
-          </div>
-          <h4>Comentanos tu situación</h4>
-          <div class="form-floating">        
-            <textarea class="form-control" placeholder="mensaje" id="mensaje" style="height: 200px"></textarea>
-            <label for="mensaje">Dejanos un mensaje</label>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </div>
-          </div>
-        </form>
+      <section>
+        <h2>Envianos tus datos y nos pondremos en contacto a la brevedad.</h2>
+        <div class="contenedor-form-boostrap">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="col-md-6">
+              <label for="apellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="apellido">
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="col-md-6">
+              <label for="telefono" class="form-label">Telefono</label>
+              <input type="tel" class="form-control" id="telefono">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Direccion</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 calle">
+            </div>
+            <div class="col-md-6">
+              <label for="barrio" class="form-label">Barrio</label>
+              <input type="text" class="form-control" id="barrio">
+            </div>
+            <div class="col-md-4">
+              <label for="inputCity" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-2">
+              <label for="cp" class="form-label">CP</label>
+              <input type="number" class="form-control" id="cp">
+            </div>
+            <h4>Comentanos tu situación</h4>
+            <div class="form-floating">        
+              <textarea class="form-control" placeholder="mensaje" id="mensaje" style="height: 200px"></textarea>
+              <label for="mensaje">Dejanos un mensaje</label>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button type="reset" class="btn btn-primary">Borrar</button>
+            </div>
+          </form>
+        </div>
     </section>
+    <a href="#menu" class="btn-arrow">
+      <img src="./assets/flecha.png" alt="flecha arriba" class="flecha">
+    </a>
   </main>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-      <footer>    
-        <span class="femicidio"> <strong id="margincopy">&copy;Loper </strong></span>
-      
-            <span><strong>Asociación Civil Loper</strong> | Espacio social, cultural y familiar.| 
-                Calle 48 N°500. La Plata. Buenos Aires. Argentina.</span>
-            <span>Lunes a sábados 10 a 19 hs.| info@loper.org| <a href="+542214255555"> Tel: (+54 221) 4255555 </a>| Tel de emergencias:<a href="tel:+542214256666"> (+54 221) 4256666 </a></span>
-      </footer>
-      <script src="js/contacto.js"></script>
-
+  <footer>    
+    <span><strong id="margincopy">&copy;Loper </strong></span>
+    <span><strong>Asociación Civil Loper</strong> | Espacio social, cultural y familiar.| Calle 48 N°500. La Plata. Buenos Aires. Argentina.</span>
+    <span>Lunes a sábados 10 a 19 hs.| info@loper.org| <a class="enlace" href="tel:+542214354478">Tel: (+54 221)4255555</a>| Tel de emergencias: <a  class="enlace" href="tel:+542214256666">(+54 221)4256666</a></span>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/contacto.js"></script>
 </body>
 
 </html>

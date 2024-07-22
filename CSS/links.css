@@ -1,78 +1,18 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    }
-.menu ul{
-    font-family:"Raleway", sans-serif;
-    font-weight: 400 ;
-    font-size: 14px;
-    list-style: none;
-    margin:0;
-    padding:0;
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content:flex-start;
-    }
-.menu ul li a{
-    color:rgb(255, 225, 230);
-    font-weight: bold;
-    border-style:inset;
-    display: block;
-    padding: 5px 5px;
-    text-decoration: none;
-    background-color: #ad10ad ;
-    }
-.menu ul li a:hover{
-    background-color: rgb(245, 114, 243);
-    }
-.li1 {
-    order: 1;
-    flex-grow: 2;
-     }
-.li2 {
-    order: 2;
-    flex-grow: 2;
-     }
-.li3 {
-    order: 3;
-    flex-grow: 2;
-     }
-.li4 {
-        order: 4;
-        flex-grow: 2;
-    }
-.li5 {
-        order: 5;
-        flex-grow: 2;
-    }
-  
-    /* Daniela Cattoni */ 
-body {margin: 30px;
-    }
-h2{ font-family: "raleway", sans-serif; 
-    color: #ad10ad;
-    margin: 20px;
-    text-align: center;
-    border-radius: 10px; 
-    border: 1px solid #ad10ad;
-    padding: 10px;
-    background-color: rgb(255, 239, 251);
-    }
-
-em:hover {color: rgb(120, 1, 108);
-    font-family: Arial, Helvetica, sans-serif
-    }
-em {color: rgb(239, 17, 213);
+em {
+    color: rgb(239, 17, 213);
     letter-spacing: 5px;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif
-    }
-.denuncia:hover {background-color: rgb(250, 183, 255);
-    } 
-.denuncia{padding: 10px;
-    margin: 20px;
+}
+
+em:hover {
+    color: rgb(120, 1, 108);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.denuncia{
+    padding: 10px;
+    margin: 20px 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -83,57 +23,59 @@ em {color: rgb(239, 17, 213);
     overflow: auto;
     font-size: 25px;
     font-weight: bold;
-    } 
-.contenedor-recursos{padding: 0px;
-    margin: 05px;
+    cursor: pointer;
+} 
+
+.denuncia:hover {
+    background-color: rgb(250, 183, 255); 
+} 
+
+.contenedor-recursos{
+    padding: 0px;
+    margin: 1rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px; 
     border: 1px solid #ad10ad;
-    background-color: rgb(255, 239, 251);
+    /* background-color: rgb(255, 239, 251); */
     box-sizing: border-box;
-    overflow: auto;
-    }
-.tituloslinks {text-decoration: underline;
+    overflow: hidden;
+    word-break: break-all
+}
+
+.tituloslinks {
+    text-decoration: underline;
     font-weight: bold;
     font-size: 20px;
-    color: #ad10ad;}
+    color: #ad10ad;
+}
 
-.telef{border-radius: 10px; 
-    border: 1px solid #ad10ad;
+.telef{
+    border-radius: 10px; 
+    /* border: 1px solid #ad10ad; */
     width: 15rem;
     padding: 10px;
-    }
+}
 
-.contenedor-recursos li{padding: 5px;
-    }
+.contenedor-recursos li{
+    padding: 5px;
+}
+
 .contenedor-recursos img {
     border-radius: 20px;
 }
-.texto-recursos{padding: 15px;
+.texto-recursos{
+    padding: 15px;
     margin: 3px 3px 3px 15px;
     height: 40%;
     width: 65%;
     font-size: 18px;
-    }
-footer{font-size: 12px;
-    text-align: center;
-    color:rgb(253, 249, 230);
-    background-color: #ad10ad;
-    display:block;
-    padding-bottom: 20px;
-    }
-   
-.femicidio {display: flex;
-    }
+}
 
-#margincopy {padding: 10px 5px;
-    }
-
-.flecha {width: 20px;
-    }
-
+ul {
+    margin: 1rem 0;
+}
    
 @media screen and (min-width: 480px) {
     /*.media {background-color: aqua;}*/
