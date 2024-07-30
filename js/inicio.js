@@ -1,4 +1,7 @@
 
+
+
+
 let mensaje = prompt("¿Estás en una situación urgente y NO PODES HABLAR? Dejanos tu nombre y contacto de alguien confiable para vos!")
 
 if (mensaje == "" || mensaje == null) {

@@ -100,6 +100,26 @@ p {
     text-align: justify;
     line-height: 2;
 }
+/*Botón para suscribirse*/
+.suscribirse button{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color:#710671;
+    color: white;
+    border: 1px solid #ad10ad;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.suscribirse button:hover{
+    background-color:white;
+    color: #ad10ad;
+    border: 1px solid #ad10ad;
+   
+}
 
 /* Flecha para ir al inicio */
 .btn-arrow{

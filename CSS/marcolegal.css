@@ -40,25 +40,6 @@ p{
     align-items: center;
 }
 
-.suscribirse button{
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    padding: 10px 20px;
-    background-color:#710671;
-    color: white;
-    border: 1px solid #ad10ad;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.suscribirse button:hover{
-    background-color:white;
-    color: #ad10ad;
-    border: 1px solid #ad10ad;
-}
-
 @media screen and (min-width: 480px) {    
     #violenciagenero, .manosunidas a img {
         width: 25rem;
