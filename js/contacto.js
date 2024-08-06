@@ -1,43 +1,62 @@
-let nombre = prompt("Por favor, indica tu nombre")
-if(nombre == "") {
-    alert("Por favor, ingresá un nombre")
-let nombre = prompt("Por favor, indicá tu nombre")
-}
-else {
-    alert(`Bienvenido a nuestra Web, ${nombre}!`)} 
+window.addEventListener('load', function(){
 
-let apellido = prompt("Por favor, indicá apellido")
+    let db = localStorage.getItem("usuarios");
+    let dbUsuarios = JSON.parse(db);
+    const formulario = document.getElementById('form-login');
+    let inputNombre = document.querySelector('#nombre');
+    let inputEmail = document.querySelector('#email');
+    //let inputPassword = document.querySelector('#password');
+    let respuesta = document.querySelector('#divContenidoLogin');
+    // console.log (formulario, inputNombre, inputEmail, inputPassword)
+          
+    formulario.addEventListener('submit', function(event) {
+            
+        event.preventDefault();
 
-let email = prompt("Por favor, indicá tu e-mail")
-if(email == "") {
-    alert("Este campo no puede estar vacío")
-let apellido = prompt("Por favor, indicá tu email")
-}
-let telefono = prompt("Por favor, indicá tu teléfono")
-if(telefono == "") {
-    alert("Este campo no puede estar vacío")
-let apellido = prompt("Por favor, indicá un teléfono de contacto")
-}
-let direccion = prompt("Por favor, indicá tu dirección")
-let ciudad = prompt("Por favor, indicá tu ciudad")
-let cp = prompt("Por favor, indicá tu código postal")
-let mensaje = prompt("¿Cómo podemos ayudarte? Comentanos tu situación")
-if(mensaje == "") {
-    alert("Este campo no puede estar vacío")
-let mensaje = prompt("Por favor, indicanos tu situación para poder ayudarte")
-}
+        let errores = [];
+        let usuarioEncontrado = false;
+        let mensajeDeRegistro;
 
-let presentacion = `Hola soy ${nombre} y ${apellido}, mi e-mail es ${email}, mi teléfono es ${telefono}, mi dirección es ${direccion} y mi situación es ${mensaje}`
+        if(inputNombre.value.length < 3){
+            errores.push('El campo nombre debe tener al menos 4 caracteres');
+        } 
+        //else if(inputPassword.value.length < 4){
+        //    errores.push('La contraseña debe contener al menos 4 caracteres.');
+        //};
 
-// console.log (presentacion)
+        for(let i=0; i< dbUsuarios.length ; i++){ 
+            if (dbUsuarios[i].email === inputEmail.value) {
+                usuarioEncontrado = true;
+            } 
+        }; 
 
+        while (respuesta.firstChild) {
+            respuesta.removeChild(respuesta.firstChild);
+        };
 
-/* window.addEventListener('load', function(e){
-    const formulario = document.querySelector('form');
-
-    let usuarios = [];
-    formulario.addEventListener('submit', function(e){
-        e.preventDefault();
+        if (errores.length > 0) {
+            let ulErrores = document.createElement('ul');
+            for(let i = 0; i < errores.length; i++){
+                ulErrores.innerHTML += `<li> ${errores[i]} </li>`
+            };
+            respuesta.appendChild(ulErrores);
+        } else {
+            if(usuarioEncontrado === false){
+                dbUsuarios.push({
+                    nombre: inputNombre.value,
+                    email: inputEmail.value,
+                    //password: inputPassword.value
+                })
+                localStorage.setItem ('usuarios', JSON.stringify(dbUsuarios)); 
+                mensajeDeRegistro = `Bienvenido ${inputNombre.value} a nuestra página.`
+            } else {
+                mensajeDeRegistro = `El email ${inputEmail.value} ya se encuentra registrado.`
+            }
+            // console.log(mensajeDeRegistro);
+            respuesta.innerHTML = `<p> ${mensajeDeRegistro} </p>`;
+            inputNombre.value = "";
+            inputEmail.value = "";
+            //inputPassword.value = "";
+        }   
     })
-    console.log(formulario)
-}) */
+})
