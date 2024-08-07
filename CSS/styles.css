@@ -112,8 +112,10 @@ p {
     border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
+    text-decoration: none;
 }
 .suscribirse button a:hover{
+    text-decoration: none;
     background-color:white;
     color: #ad10ad;
     border: 1px solid #ad10ad;
