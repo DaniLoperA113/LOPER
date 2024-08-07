@@ -49,6 +49,24 @@
     border-radius: 20px;
     max-width: 100%;
 }
+.suscribirse button{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color:#710671;
+    color: white;
+    border: 1px solid #ad10ad;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.suscribirse button:hover{
+    background-color:white;
+    color: #ad10ad;
+    border: 1px solid #ad10ad;
+}
 
 aside .product{
     display: flex;
@@ -64,6 +82,10 @@ aside .product{
     box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.3);
 }
 
+aside#publicity{
+    width: auto;
+    margin-block-end: 2vh;
+}
 #publicity{
     flex-direction: row;
     flex-wrap: wrap;
@@ -113,17 +135,21 @@ aside .product{
 
 .product h2, .product p, .product a{
     font-family: "Roboto", sans-serif;
-    font-size: 1vw;
+    font-size: 0.8rem;
     padding: 0.1vh;
-    text-align:start;
+    text-align: start;
+    overflow: hidden;   
+    text-overflow: ellipsis; 
 }
 
 .product p{
     font-weight: 700;
 }
 .product img{
-    width: 6rem;
-    height: 4 rem;
+    width: 100%;  
+    height: auto; 
+    max-width: 6rem;  
+    max-height: 4rem;
 }
 
 .product a{
@@ -131,15 +157,39 @@ aside .product{
     text-decoration: none;
     color: blue;
 }
-
+@media screen and (max-width: 480px){
+    #publicity{
+        display: flex;
+        width: 80vw;
+        justify-content: center;
+    }
+    article#product-4.product, article#product-3.product, article#product-2.product, article#product-1.product {
+        display: none;
+    }  
+    article#product-0.product{
+        display: flex;
+        width: 50%;
+    }
+    article.product{
+        width: 50%;
+    }
+}
 @media screen and (min-width: 480px) {
     .foto1, .fotomano {
         width: 30rem;
     }
-
-    #product-4, #product-3, #product-2, #product-1 {
+    #publicity{
+        display: flex;
+        width: 80vw;
+        justify-content: center;
+    }
+    article#product-4.product, article#product-3.product, article#product-2.product {
         display: none;
     }  
+    article#product-1.product, article#product-0.product{
+        display: flex;
+        width: 30%;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -147,9 +197,19 @@ aside .product{
     .definicion, .femicidio, .tabla {
         flex-direction: row;
     }
-
-    #product-4, #product-3, #product-2  {
+    #publicity{
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+    }
+    article#product-4.product, article#product-3.product {
         display: none;
+    }
+    article#product-2.product, article#product-1.product, article#product-0.product{
+        display: flex;
+        width: 20%;
     }
 }
 
@@ -158,8 +218,18 @@ aside .product{
     .foto1, .fotomano {
         width: 40rem;
     }
-
-    #product-5, #product-4, #product-3, #product-2, #product-1 {
+    #publicity{
+        flex-direction: row;
+        flex-wrap: wrap;
         display: flex;
-    } 
+        width: 90vw;
+        justify-content: center;
+    }
+    article.product{
+        width: 18%;
+    }
+    article#product-4.product, article#product-3.product, article#product-2.product, article#product-1.product,article#product-0.product{
+        display: flex;
+        width: 18%;
+    }
 }
