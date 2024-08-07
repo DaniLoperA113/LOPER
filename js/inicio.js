@@ -20,7 +20,7 @@ const fetchData = (product, quantity) => {
                             price: element.price,
                             currency_id: element.currency_id,
                             available_quantity: element.available_quantity,
-                            thumbnail: element.thumbnail,
+                            thumbnail: element.thumbnail.replace('http://', 'https://'),
                             condition: element.condition,
                             permalink: element.permalink
                         };
