@@ -50,17 +50,106 @@
     max-width: 100%;
 }
 
+aside .product{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90vw;
+    align-items: center;
+    margin: 0 auto;
+    background-color: yellow;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    position: relative;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.3);
+}
+
+#publicity{
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90vw;
+    align-items: center;
+    margin: 0 auto;
+    background-color: yellow;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    position: relative;
+}
+#publicity h2{
+    border: none;
+    background-color: transparent;
+    color: black;
+    margin: 2px 2px;
+    font-weight:lighter;
+}
+#publicity h2:hover{
+    color: blue;
+}
+
+.textPublicity{
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    font-weight: 700;
+}
+
+#publicity .product{
+    border: 1px solid gray;
+    width: 18%;
+    height: 13rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.product h2, .product p, .product a{
+    font-family: "Roboto", sans-serif;
+    font-size: 1vw;
+    padding: 0.1vh;
+    text-align:start;
+}
+
+.product p{
+    font-weight: 700;
+}
+.product img{
+    width: 6rem;
+    height: 4 rem;
+}
+
+.product a{
+    font-weight: 700;
+    text-decoration: none;
+    color: blue;
+}
 
 @media screen and (min-width: 480px) {
     .foto1, .fotomano {
         width: 30rem;
     }
+
+    #product-4, #product-3, #product-2, #product-1 {
+        display: none;
+    }  
 }
 
 @media screen and (min-width: 768px) {
 
     .definicion, .femicidio, .tabla {
         flex-direction: row;
+    }
+
+    #product-4, #product-3, #product-2  {
+        display: none;
     }
 }
 
@@ -69,4 +158,8 @@
     .foto1, .fotomano {
         width: 40rem;
     }
+
+    #product-5, #product-4, #product-3, #product-2, #product-1 {
+        display: flex;
+    } 
 }
