@@ -18,7 +18,11 @@ p{
 }
 
  .equipo p {
-    font-size: medium;
+    font-size: 0.9rem;
+    padding: 0.1vh;
+    text-align: start;
+    overflow: hidden;   
+    text-overflow: ellipsis; 
     border-radius: 10px; 
     border: 1px solid #ad10ad;
     margin: 20px;
@@ -74,7 +78,11 @@ p{
 .texto-card{
     padding: 10px;
     height: 50%;
-    overflow: hidden;
+    font-size: 0.9rem;
+    padding: 0.1vh;
+    text-align: center;
+    overflow: hidden;   
+    text-overflow: ellipsis; 
 }
 
 .texto-card h5{
