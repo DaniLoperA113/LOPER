@@ -10,7 +10,6 @@ p{
 }
 
 .equipo {
-    margin: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -94,6 +93,10 @@ p{
     font-size: 16px;
 }
 @media screen and (max-width: 480px){
+    .equipo{
+        margin: 5px;
+        flex-direction: column;
+    }
     .texto-card h5{
         font-size: 14px;    
     }
@@ -103,8 +106,29 @@ p{
     .card-equipo{
         width: 200px;
     }
+    .equipo img{
+        margin: 20px 0px;
+        width: 200px;
+        height: 200px;
+    }
+    .equipo p{
+        margin: 20px 0px;
+        width: 250px;
+        height: auto;
+    }
 }
 @media screen and (min-width: 480px) {
+    .equipo{
+        flex-direction: column;
+    }
+    .equipo p{
+        width: 350px;
+        height: auto;
+    }
+    .equipo img{
+        width: 350px;
+        height: 500px;
+    }
     .texto-card h5{
         font-size: 16px;    
     }
@@ -117,6 +141,17 @@ p{
 }
 
 @media screen and (min-width: 768px) {
+    .equipo{
+        flex-direction: row;
+    }
+    .equipo p{
+        width: 300px;
+        height: auto;
+    }
+    .equipo img{
+        width: 250px;
+        height: 350px;
+    }
     .texto-card h5{
         font-size: 17px;    
     }
@@ -129,6 +164,17 @@ p{
 }
 
 @media screen and (min-width: 1024px) {
+    .equipo{
+        flex-direction: row;
+    }
+    .equipo p{
+        width: 350px;
+        height: auto;
+    }
+    .equipo img{
+        width: 340px;
+        height: 350px;
+    }
     .texto-card h5{
         font-size: 18px;    
     }
@@ -138,4 +184,4 @@ p{
     .card-equipo{
         width: 300px;
     }
-}
+    }
