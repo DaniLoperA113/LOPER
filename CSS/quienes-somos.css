@@ -59,11 +59,10 @@ p{
     margin: 0.5rem;
     background-color: white;
     box-shadow: 1px 0 5px 05px rgba(0,0,0,0.3) ;
-    width: 350px;
-    height:auto;
+    width: 300px;
     border: 1px solid #ad10ad;
     border-radius: 10px; 
-    height: 480px;
+    height: 400px;
     text-align: center;
 }
 
@@ -90,4 +89,53 @@ p{
     font-size: large;
     text-align: center;
     color: #5a035a;
+}
+.texto-card p{
+    font-size: 16px;
+}
+@media screen and (max-width: 480px){
+    .texto-card h5{
+        font-size: 14px;    
+    }
+    .texto-card p{
+        font-size: 12px;
+    }
+    .card-equipo{
+        width: 200px;
+    }
+}
+@media screen and (min-width: 480px) {
+    .texto-card h5{
+        font-size: 16px;    
+    }
+    .texto-card p{
+        font-size: 14px;
+    }
+    .card-equipo{
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .texto-card h5{
+        font-size: 17px;    
+    }
+    .texto-card p{
+        font-size: 15px;
+    }
+    .card-equipo{
+        width: 275px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .texto-card h5{
+        font-size: 18px;    
+    }
+    .texto-card p{
+        font-size: 16px;
+    }
+    .card-equipo{
+        width: 300px;
+    }
 }
