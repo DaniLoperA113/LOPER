@@ -26,14 +26,14 @@ p{
     border: 1px solid #ad10ad;
     margin: 20px;
     padding: 2% ;
-    width: 500px;
+    width: 50%;
     height: 350px;
 }
 
 .equipo img{
     border-radius: 10px; 
     border: 1px solid #ad10ad;
-    width: 500px;
+    width: 50%;
     height: 500px;
     object-fit: cover;
     overflow-clip-margin: content-box;
@@ -95,6 +95,7 @@ p{
 }
 @media screen and (max-width: 480px){
     .contenedor-card {
+        margin: 20px 0px;
         flex-wrap: wrap;
     }
     .equipo{
@@ -156,13 +157,15 @@ p{
     }
     .equipo{
         flex-direction: row;
+        align-items: stretch
     }
     .equipo p{
+        margin: 0px;
         width: 350px;
         height: auto;
     }
     .equipo img{
-        width: 250px;
+        width: 350px;
         height: auto;
     }
     .texto-card h5{
@@ -179,24 +182,31 @@ p{
 
 @media screen and (min-width: 1024px) {
     .contenedor-card {
+        margin: 20px 0px;
         flex-wrap: nowrap;
     }
     .equipo{
         flex-direction: row;
+        align-items: stretch
     }
     .equipo p{
-        width: 350px;
-        height: auto;
+        font-size: medium;
+        margin: 20px 0px;
+        width:  45%;
+        height: 350;
     }
     .equipo img{
-        width: 350px;
+        margin: 20px 0px;
+        width:  45%;
         height: 350px;
     }
     .texto-card h5{
+        margin: 3%;
         font-size: 16px;    
     }
     .texto-card p{
-        font-size: 14px;
+        margin: 5%;
+        font-size: 13px;
         text-align: star;
     }
     .card-equipo{
