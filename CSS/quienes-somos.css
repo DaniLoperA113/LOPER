@@ -193,12 +193,12 @@ p{
         font-size: medium;
         margin: 20px 0px;
         width:  45%;
-        height: 350;
+        height: auto;
     }
     .equipo img{
         margin: 20px 0px;
         width:  45%;
-        height: 350px;
+        height: auto;
     }
     .texto-card h5{
         margin: 3%;
