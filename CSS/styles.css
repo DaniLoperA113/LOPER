@@ -122,17 +122,21 @@ p {
 }
 
 /* Flecha para ir al inicio */
-.btn-arrow{
+.btn-arrow {
+    right: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 3rem;
     height: 3rem;
     background-color:rgb(255, 209, 243);
     border-radius: 50%;
     border: 1px solid #710671;
-    position: absolute;
-    right: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    border-radius: 50%;
 }
 .flecha {
     width: 2rem;
